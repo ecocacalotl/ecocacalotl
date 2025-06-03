@@ -132,24 +132,31 @@
     <div class="modal-contenido">
       <span class="cerrar">&times;</span>
       <h2>Formulario de Reserva</h2>
-      <form>
-        <label>Nombre:</label><br>
-        <input type="text" name="nombre" required><br><br>
+      <form action="https://formsubmit.co/ecocacalotl@gmail.com" method="POST">
+          <label>Nombre:</label><br>
+          <input type="text" name="nombre" required><br><br>
 
-        <label>Correo electrónico:</label><br>
-        <input type="email" name="correo" required><br><br>
+          <label>Correo electrónico:</label><br>
+          <input type="email" name="correo" required><br><br>
 
-        <label>Fecha de llegada:</label><br>
-        <input type="date" name="llegada" required><br><br>
+          <label>Fecha de llegada:</label><br>
+          <input type="date" name="llegada" required><br><br>
 
-        <label>Fecha de salida:</label><br>
-        <input type="date" name="salida" required><br><br>
+          <label>Fecha de salida:</label><br>
+          <input type="date" name="salida" required><br><br>
 
-        <label>Comentarios o preferencias:</label><br>
-        <textarea name="comentarios"></textarea><br><br>
+          <label>Comentarios o preferencias:</label><br>
+          <textarea name="comentarios"></textarea><br><br>
 
-        <button type="submit">Enviar reserva</button>
-      </form>
+  <!-- Oculta el captcha de Formsubmit (opcional) -->
+         <input type="hidden" name="_captcha" value="false">
+
+  <!-- Redirige a una página de gracias personalizada (opcional) -->
+  <!-- <input type="hidden" name="_next" value="https://tu-pagina.com/gracias.html"> -->
+
+       <button type="submit">Enviar reserva</button>
+    </form>
+
     </div>
   </div>
 
